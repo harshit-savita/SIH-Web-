@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Data</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+
+    <div class="flex justify-between h-14 bg-gray-300 text-black border-b-2 border-slate-200 content-center items-center text-2xl font-bold px-20 font-sans">
+        <h4>PARIKSHAN</h4>
+        <div class="logo flex w-auto items-center">
+            <h4>Ministry Of Defence</h4>&nbsp;&nbsp;<img class="h-14" src="drdo.png"  alt="">
+        </div>
+       </div>
+
+    <div class="container mx-auto p-4">
+        <div class="flex h-screen">
+            <div class="w-1/2 p-4 flex justify-evenly items-center">
+                <!-- Display the uploaded image -->
+
+                <div class="image-container">
+                    <img id="displayedImage" class="w-full h-auto" src="" alt="Uploaded Image">
+                </div>
+            </div>
+            <div class="w-1/2 p-4">
+                <!-- Display the JSON data in a table -->
+                <h2 class="text-2xl font-semibold mb-4 text-center">Terrain Information</h2>
+                <div class="bg-white p-4 rounded shadow">
+                    <table class="w-full text-sm text-center text-gray-500 dark:text-gray-400 table-fixed">
+
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Terrain Type
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-blue-400">
+                                    Rocky
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    Property
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Percentage
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Roughness
+                                </th>
+                                <td class="px-6 py-4">
+                                    70%
+                                </td>
+                                
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Slipperiness
+                                </th>
+                                <td class="px-6 py-4">
+                                    34%
+                                </td>
+                            
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Treacherousness
+                                </th>
+                                <td class="px-6 py-4">
+                                    13%
+                                </td>
+                            
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Surface Stability
+                                </th>
+                                <td class="px-6 py-4">
+                                    89%
+                                </td>
+                            
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Deformability
+                                </th>
+                                <td class="px-6 py-4">
+                                    32%
+                                </td>
+                            
+                            </tr>
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Vegetation
+                                </th>
+                                <td class="px-6 py-4">
+                                    88%
+                                </td>
+                            
+                            </tr>
+
+                            <tr class="bg-white dark:bg-gray-800">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Hydration
+                                </th>
+                                <td class="px-6 py-4">
+                                    45%
+                                </td>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
